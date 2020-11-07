@@ -18,6 +18,9 @@ pm.sleep_mode=1
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Disable RescueParty due to high risk of data loss
+persist.sys.disable_rescue=true
+
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
