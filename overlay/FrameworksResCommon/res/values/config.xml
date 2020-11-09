@@ -510,4 +510,7 @@
         <!-- Allow more cached apps in the background -->
         <item>activity_manager/max_cached_processes=64</item>
     </string-array>
+
+    <!-- Whether device has Turbo power charging support -->
+    <bool name="config_hasTurboPowerCharger">true</bool>
 </resources>
