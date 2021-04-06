@@ -8,6 +8,9 @@ on property:sys.boot_completed=1
 on property:vendor.post_boot.parsed=1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.sapphire_perf.sh
 
+    # Disable native stats collection service
+    stop statsd
+
     # cpuset parameters
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/system-background/cpus 0-3
