@@ -1,2 +1,5 @@
+# Display
+debug.sf.frame_rate_multiple_threshold=60
+
 # WLAN
 ro.hardware.wlan.chip=wcn3988
