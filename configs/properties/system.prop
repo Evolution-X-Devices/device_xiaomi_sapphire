@@ -23,10 +23,6 @@ debug.hwui.target_cpu_time_percent=30
 # HWUI
 debug.hwui.skia_atrace_enabled=false
 
-# IOrap
-persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
-ro.iorapd.enable=false
-
 # Media
 media.settings.xml=/vendor/etc/media_profiles_khaje_v0.xml
 media.aac_51_output_enabled=true
