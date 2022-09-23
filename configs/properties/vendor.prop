@@ -219,6 +219,9 @@ vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
 
 # Displayfeature
 ro.vendor.all_modes.colorpick_adjust=true
