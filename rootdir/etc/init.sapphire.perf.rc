@@ -47,6 +47,9 @@ on property:vendor.post_boot.parsed=1
     # Disable vblank IRQ immediately after turning off
     write /sys/module/drm/parameters/vblankoffdelay -1
 
+    # Disable multiple kswapd threads
+    write /proc/sys/vm/kswapd_threads 1
+
     # IRQ Tuning
     # IRQ 218: msm_drm0
     # IRQ 209: kgsl_3d0_irq
