@@ -16,9 +16,6 @@ sys.fp.miui.token=0
 # Fwk-Detect
 ro.vendor.qti.va_aosp.support=1
 
-# Graphics
-debug.sf.disable_backpressure=1
-
 # Hint Manager
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
