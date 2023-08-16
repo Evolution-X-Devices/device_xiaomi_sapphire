@@ -59,6 +59,10 @@ on boot
 
     start nfc_hal_service
 
+on property:sys.boot_completed=1
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
+
 service stflashtool /vendor/bin/STFlashTool
     class late_start
     group nfc
