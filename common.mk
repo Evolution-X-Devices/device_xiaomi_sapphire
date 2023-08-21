@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener
 
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
