@@ -70,6 +70,9 @@ $(call soong_config_set, ufsbsg, ufsframework, bsg)
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
 
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+
 # Display
 TARGET_SCREEN_DENSITY := 437
 
