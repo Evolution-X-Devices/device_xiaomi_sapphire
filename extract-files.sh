@@ -65,7 +65,10 @@ function blob_fixup() {
             ;;
         vendor/lib*/soundfx/libdlbvol.so|vendor/lib*/soundfx/libhwdap.so|vendor/lib64/libdlbdsservice.so | vendor/lib64/libcodec2_soft_ac4dec.so | vendor/lib64/libcodec2_soft_ddpdec.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
-            ;;
+            ;;    
+        vendor/lib64/hw/displayfeature.default.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;    
         vendor/etc/dolby/dax-default.xml)
             sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
             ;;
