@@ -147,6 +147,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # Charger
 PRODUCT_PACKAGES += \
+    charger_res_images \
     libsuspend
 
 # DebugFS
