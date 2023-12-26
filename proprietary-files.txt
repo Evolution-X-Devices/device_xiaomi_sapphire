@@ -659,11 +659,6 @@ vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib/libvmmem.so
 vendor/lib64/libvmmem.so
 
-# Memtrack
-vendor/bin/hw/vendor.qti.hardware.memtrack-service
-vendor/etc/init/memtrack_qti.rc
-vendor/etc/vintf/manifest/memtrack_qti.xml
-
 # Mlipay
 odm/bin/mlipayd@1.1
 odm/bin/mtd@1.3
