@@ -212,7 +212,7 @@ vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 # Dolby - from sapphire V14.0.6.0.TNGMIXM
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|c6ebdaff686ba23391b72a69b0fdc4d2c95bb1ae
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service|47c5e28624a6f149c5a96347b5d04503832064cc
-vendor/etc/dolby/dax-default.xml|09f81ab93361eea6e0589d959825bd6d88024787
+vendor/etc/dolby/dax-default.xml|b037c718ada2475604c177ebe01974db9e65c43c
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
