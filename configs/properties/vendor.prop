@@ -220,6 +220,13 @@ ro.vendor.whitepoint_calibration_enable=true
 ro.vendor.xiaomi.bl.poll=true
 sys.displayfeature_hidl=true
 
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1
+ro.vendor.audio.dolby.dax.version=DAX3_3.8.5.20_r1
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.eq.half=true
+ro.vendor.audio.dolby.surround.enable=false 
+
 # FM
 vendor.hw.fm.init=0
 

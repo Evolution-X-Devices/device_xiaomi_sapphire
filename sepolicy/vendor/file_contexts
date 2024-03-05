@@ -14,6 +14,11 @@
 /dev/mi_display/disp_feature u:object_r:vendor_displayfeature_device:s0
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)? u:object_r:vendor_sysfs_displayfeature:s0
 
+# Dolby
+/data/vendor/dolby(/.*)?                                                                        u:object_r:vendor_data_file:s0
+/vendor/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                        u:object_r:hal_dms_default_exec:s0
+/vendor/bin/hw/vendor\.dolby\.media\.c2@1\.0-service                                            u:object_r:mediacodec_exec:s0
+
 # Fingerprint data
 /data/gf_data(/.*)?                                                     u:object_r:goodix_fingerprint_data_file:s0
 /data/vendor/goodix/gf_data(/.*)?                                       u:object_r:vendor_fingerprint_data_file:s0
