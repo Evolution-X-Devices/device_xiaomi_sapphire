@@ -464,7 +464,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS (system)
 system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/app/QtiTelephony/QtiTelephony.apk
+system_ext/app/QtiTelephony/QtiTelephony.apk|c70bc9363b75414128222b42ff2846b50c99423a
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
@@ -493,7 +493,7 @@ system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk|656b40ec9916a41013614358d5e661cdf915be36
 
 # IMS ( vendor )
 vendor/bin/ims_rtp_daemon
