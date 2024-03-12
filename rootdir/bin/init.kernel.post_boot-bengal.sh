@@ -144,7 +144,15 @@ function configure_memory_parameters() {
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
-    echo 1 > /proc/sys/vm/watermark_scale_factor
+
+    #Set per-app max kgsl reclaim limit and per shrinker call limit
+    if [ -f /sys/class/kgsl/kgsl/page_reclaim_per_call ]; then
+       echo 38400 > /sys/class/kgsl/kgsl/page_reclaim_per_call
+    fi
+
+    if [ -f /sys/class/kgsl/kgsl/max_reclaim_limit ]; then
+       echo 25600 > /sys/class/kgsl/kgsl/max_reclaim_limit
+    fi
 
     configure_zram_parameters
 
@@ -285,7 +293,10 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
 
 # configure input boost settings
 echo 1190000 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
-echo 80 > /proc/sys/walt/input_boost/input_boost_ms
+echo 120 > /proc/sys/walt/input_boost/input_boost_ms
+
+echo 1516800 0 0 0 2208000 0 0 0 > /proc/sys/walt/input_boost/powerkey_input_boost_freq
+echo 400 > /proc/sys/walt/input_boost/powerkey_input_boost_ms
 
 # configure governor settings for gold cluster
 echo "walt" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
@@ -295,6 +306,13 @@ echo 1344000 > /sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq
 echo 1056000 > /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy4/walt/pl
 echo 0 > /sys/devices/system/cpu/cpufreq/policy4/walt/rtg_boost_freq
+
+# cpuset parameters
+echo 0-2 > /dev/cpuset/background/cpus
+echo 0-3 > /dev/cpuset/system-background/cpus
+echo 4-7 > /dev/cpuset/foreground/boost/cpus
+echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+echo 0-7 > /dev/cpuset/top-app/cpus
 
 # configure bus-dcvs
 bus_dcvs="/sys/devices/system/cpu/bus_dcvs"
