@@ -233,9 +233,6 @@ vendor.hw.fm.init=0
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# Fingerprint
-ro.hardware.fp.sideCap=true
-
 # Graphics
 graphics.gpu.profiler.support=true
 ro.hardware.egl=adreno
