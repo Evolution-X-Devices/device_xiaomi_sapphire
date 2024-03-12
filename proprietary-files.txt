@@ -312,6 +312,10 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_lc
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+
 # FM
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
