@@ -15,20 +15,16 @@
     <!-- Dolby Atmos -->
     <string-array name="dolby_profile_entries">
         <item>@string/dolby_profile_dynamic</item>
-        <item>@string/dolby_profile_movie</item>
+        <item>@string/dolby_profile_video</item>
         <item>@string/dolby_profile_music</item>
-        <item>@string/dolby_profile_game1</item>
-        <item>@string/dolby_profile_game2</item>
-        <item>@string/dolby_profile_voice</item>
+        <item>@string/dolby_profile_vocal</item>
     </string-array>
 
     <string-array name="dolby_profile_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>8</item>
     </string-array>
 
     <string-array name="dolby_preset_entries" translatable="false">
@@ -73,17 +69,11 @@
 
     <string-array name="dolby_virtualizer_entries">
         <item>@string/dolby_off</item>
-        <item>@string/dolby_low</item>
         <item>@string/dolby_medium</item>
-        <item>@string/dolby_high</item>
-        <item>@string/dolby_max</item>
     </string-array>
 
     <string-array name="dolby_virtualizer_values">
         <item>0</item>
-        <item>4</item>
-        <item>24</item>
-        <item>44</item>
-        <item>64</item>
+        <item>35</item>
     </string-array>
 </resources>

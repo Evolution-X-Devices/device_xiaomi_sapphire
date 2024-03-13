@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package com.xiaomi.dolby;
 
 import android.media.AudioAttributes;
 import android.media.AudioDeviceAttributes;
@@ -38,6 +38,8 @@ import java.util.List;
 
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
+
+import com.xiaomi.dolby.R;
 
 public class DolbySettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener, OnMainSwitchChangeListener {

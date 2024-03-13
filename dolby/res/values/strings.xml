@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018 The LineageOS Project
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+
           http://www.apache.org/licenses/LICENSE-2.0
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -13,7 +16,7 @@
 -->
 <resources>
     <!-- App Name -->
-    <string name="app_name">Dolby Manager</string>
+    <string name="app_name">Xiaomi Dolby</string>
 
     <!-- Dolby Atmos -->
     <string name="dolby_title">Dolby Atmos</string>
@@ -39,11 +42,9 @@
 
     <!-- Dolby Atmos: Sound Profiles -->
     <string name="dolby_profile_dynamic">Dynamic</string>
-    <string name="dolby_profile_movie">Movie</string>
     <string name="dolby_profile_music">Music</string>
-    <string name="dolby_profile_game1">Game1</string>
-    <string name="dolby_profile_game2">Game2</string>
-    <string name="dolby_profile_voice">Voice</string>
+    <string name="dolby_profile_video">Movie / Video</string>
+    <string name="dolby_profile_vocal">Voice</string>
 
     <!-- Dolby Atmos: Equalizer presets -->
     <string name="dolby_preset_default">Default</string>
