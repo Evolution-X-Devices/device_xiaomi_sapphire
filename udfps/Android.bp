@@ -1,3 +1,4 @@
+
 //
 // Copyright (C) 2022 The LineageOS Project
 //
@@ -12,6 +13,7 @@ cc_library {
         "libbase",
     ],
     header_libs: [
-        "xiaomifingerprint_headers",
+        "generated_kernel_headers",
+        "//hardware/xiaomi:xiaomifingerprint_headers",
     ],
 }
