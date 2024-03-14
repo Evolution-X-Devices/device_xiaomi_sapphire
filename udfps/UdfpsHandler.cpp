@@ -205,7 +205,6 @@ class XiaomiSm6225UdfpsHander : public UdfpsHandler {
     void cancel() {
         LOG(INFO) << __func__;
         enrolling = false;
-        setFingerDown(false);
         setFodStatus(FOD_STATUS_OFF);
     }
 
