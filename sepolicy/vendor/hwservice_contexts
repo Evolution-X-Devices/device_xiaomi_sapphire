@@ -18,3 +18,6 @@ vendor.xiaomi.hardware.fx.tunnel::IMiFxTunnel                                 u:
 # Mlipay
 vendor.xiaomi.hardware.mlipay::IMlipayService       u:object_r:hal_mlipay_hwservice:s0
 vendor.xiaomi.hardware.mtdservice::IMTService       u:object_r:hal_mtdservice_hwservice:s0
+
+# Touchfeature
+vendor.xiaomi.hw.touchfeature::ITouchFeature        u:object_r:hal_touchfeature_xiaomi_hwservice:s0
