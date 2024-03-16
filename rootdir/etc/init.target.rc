@@ -166,10 +166,6 @@ on boot
 	chown system system /sys/class/touch/touch_dev/palm_sensor
 	chmod 0664 /sys/class/touch/touch_dev/palm_sensor
 
-    # Xiaomi touch
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
-
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
