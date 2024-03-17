@@ -23,6 +23,7 @@ vendor_public_prop(vendor_thermal_normal_prop)
 # Touchfeature
 vendor_public_prop(vendor_panel_info_prop)
 vendor_restricted_prop(vendor_touchfeature_prop)
+vendor_restricted_prop(vendor_touch_hostprocess_prop)
 
 # WiFi
 vendor_public_prop(vendor_wifimac_prop)

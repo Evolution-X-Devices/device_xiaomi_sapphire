@@ -64,6 +64,7 @@ ro.vendor.ril.svdo  u:object_r:vendor_radio_prop:s0
 vendor.sys.thermal.data.path             u:object_r:vendor_thermal_normal_prop:s0
 
 # Touchfeature
+persist.vendor.hostprocess.waterproof    u:object_r:vendor_touch_hostprocess_prop:s0
 persist.vendor.touchfeature.             u:object_r:vendor_touchfeature_prop:s0
 ro.vendor.touchfeature.type              u:object_r:vendor_touchfeature_prop:s0
 vendor.panel.                            u:object_r:vendor_panel_info_prop:s0

@@ -11,6 +11,7 @@ allow touchreport sysfs_touch_suspend:file rw_file_perms;
 allow touchreport input_device:chr_file rw_file_perms;
 allow touchreport input_device:dir r_dir_perms;
 allow touchreport proc_tp_file:file { open read write };
+allow touchreport proc_tp_lockdown:file { open read write };
 allow touchreport touchreport_data_file:file { open read };
 allow touchreport touchreport_data_file:dir rw_dir_perms;
 allow touchreport vendor_data_touchreport_file:dir { add_name read remove_name search watch write };
@@ -22,6 +23,6 @@ allow touchreport self:cap_userns sys_nice;
 allow touchreport self:tcp_socket { create getattr getopt read setopt write };
 allow touchreport self:udp_socket { create getattr getopt read setopt write };
 init_daemon_domain(touchreport)
-#set_prop(touchreport, vendor_touch_hostprocess_prop)
+set_prop(touchreport, vendor_touch_hostprocess_prop)
 type touchreport, domain;
 type touchreport_exec, exec_type, file_type, vendor_file_type;

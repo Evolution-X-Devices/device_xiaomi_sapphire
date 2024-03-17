@@ -34,6 +34,9 @@ genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2
 
 # Touchfeature
 genfscon proc "/tp_hal_version"                                                 u:object_r:proc_tp_file:s0
+genfscon proc "/tp_lockdown_info"                                               u:object_r:proc_tp_lockdown:s0
+genfscon proc "/tp_lockdown_info_pri"                                           u:object_r:proc_tp_lockdown:s0
+genfscon proc "/tp_lockdown_info_sec"                                           u:object_r:proc_tp_lockdown:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/abnormal_event"                u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/clicktouch_raw"                u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/ear_sensor"                    u:object_r:sysfs_tp_virtual_prox:s0
@@ -50,6 +53,8 @@ genfscon sysfs "/devices/virtual/touch/touch_dev/touch_finger_status"           
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_ic_buffer"               u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_irq_no"                  u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_sensor_ctrl"             u:object_r:sysfs_touch_hostprocess:s0
+genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_breakline_mode"      u:object_r:sysfs_touch_hostprocess:s0
+genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_breakline_result"    u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_cmd"                 u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_cmd_ready"           u:object_r:sysfs_touch_hostprocess:s0
 genfscon sysfs "/devices/virtual/touch/touch_dev/touch_thp_downthd"             u:object_r:sysfs_touch_hostprocess:s0
