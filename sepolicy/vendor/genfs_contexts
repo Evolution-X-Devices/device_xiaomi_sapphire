@@ -32,6 +32,9 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup             u
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2c-0/0-006a/power_supply/bbc/wakeup18 u:object_r:sysfs_wakeup:s0
 
+# last_kmsg
+genfscon proc /last_kmsg                                                       u:object_r:proc_last_kmsg:s0
+
 # Touchfeature
 genfscon proc "/tp_hal_version"                                                 u:object_r:proc_tp_file:s0
 genfscon proc "/tp_lockdown_info"                                               u:object_r:proc_tp_lockdown:s0
