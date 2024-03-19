@@ -89,6 +89,7 @@
 /sys/devices/virtual/touch/touch_dev/touch_thp_(.*)                     u:object_r:sysfs_touch_hostprocess:s0
 /sys/devices/virtual/touch/touch_dev/tx_num                             u:object_r:sysfs_touch_hostprocess:s0
 /sys/devices/virtual/touch/touch_dev/update_rawdata                     u:object_r:sysfs_touch_hostprocess:s0
+/sys/devices/virtual/touch/tp_dev/fod_status                            u:object_r:sysfs_tp_fodstatus:s0
 /(vendor|odm)/etc/init.panel_info.sh                                    u:object_r:vendor_touch_init_shell_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/ear_sensor                   u:object_r:touchreport_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/touch_delta                  u:object_r:touchreport_exec:s0
