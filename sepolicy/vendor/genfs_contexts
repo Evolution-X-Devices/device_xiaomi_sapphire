@@ -35,6 +35,10 @@ genfscon sysfs /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a84000.i2c/i2
 # last_kmsg
 genfscon proc /last_kmsg                                                       u:object_r:proc_last_kmsg:s0
 
+# Suspend
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup8 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/alarmtimer.1.auto/wakeup/wakeup8/event_count u:object_r:sysfs_wakeup:s0
+
 # Touchfeature
 genfscon proc "/tp_hal_version"                                                 u:object_r:proc_tp_file:s0
 genfscon proc "/tp_lockdown_info"                                               u:object_r:proc_tp_lockdown:s0
