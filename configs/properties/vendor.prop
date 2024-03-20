@@ -152,11 +152,6 @@ vendor.qc2audio.suspend.enabled=true
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# DPM
-persist.vendor.dpm.vndr.feature=1
-persist.vendor.dpm.vndr.halservice.enable=1
-persist.vendor.dpm.vndr.idletimer.mode=default
-
 # DRM
 drm.service.enabled=true
 
@@ -251,9 +246,6 @@ vendor.mm.enable.qcom_parser=16711663
 # Netflix
 vendor.netflix.bsp_rev=Q6115-31409-1
 
-# NFC
-ro.vendor.se.type=HCE,UICC
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.3
@@ -265,21 +257,6 @@ vendor.power.pasr.enabled=true
 
 # QCOM sys
 persist.vendor.qcomsysd.enabled=1
-
-# Radio
-persist.radio.multisim.config=dsds
-persist.vendor.data.iwlan.enable=true
-persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.data_con_rprt=1
-persist.vendor.radio.enableadvancedscan=true
-persist.vendor.radio.manual_nw_rej_ct=1
-persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.rat_on=combine
-persist.vendor.radio.sib16_support=1
-persist.vendor.radio.snapshot_enabled=1
-persist.vendor.radio.snapshot_timer=5
-persist.vendor.rcs.singlereg.feature=1
 
 # Sensors
 persist.vendor.sensors.debug.ssc_qmi_debug=true
