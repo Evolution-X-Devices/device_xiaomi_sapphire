@@ -74,6 +74,13 @@ subsystem mem_buf_vm
     devname uevent_devpath
     dirname /dev/mem_buf_vm
 
+subsystem mi_display
+    devname uevent_devpath
+    dirname /dev/mi_display
+
+# xiaomi display feature
+/dev/mi_display/*         0666   root       graphics
+
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0666   system     oem_2901
 /dev/mhi_*_pipe_4         0660   system     system

@@ -1,4 +1,4 @@
-# All blobs below are extracted from topaz V816.0.2.0.UMGMIXM
+# All blobs below are extracted from sapphire V816.0.2.0.UNGMIXM
 
 # Alarm
 system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -18,13 +18,13 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libshoebox.so
 
-# Bluetooth - from sapphire V14.0.6.0.TNGMIXM
+# Bluetooth
 system_ext/etc/bluetooth/leaudio_configs.xml
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
-# Bluetooth ( A2DP ) - from sapphire V14.0.6.0.TNGMIXM
+# Bluetooth
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
@@ -205,7 +205,7 @@ vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
-# Dolby - from sapphire V14.0.6.0.TNGMIXM
+# Dolby
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service
 vendor/etc/dolby/dax-default.xml|b037c718ada2475604c177ebe01974db9e65c43c
@@ -289,32 +289,22 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 # GNSS
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
-vendor/bin/garden_app
 vendor/bin/loadalgo
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
-vendor/bin/ssgtzd
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
 vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/shsusrd.rc
-vendor/etc/init/ssgtzd.rc
-vendor/etc/cacert_location.pem
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
-vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
-vendor/lib64/libgarden.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
@@ -347,8 +337,6 @@ vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_server_protocol.so
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 
 # Graphics
 vendor/gpu/kbc/sequence_manifest.bin
@@ -460,8 +448,8 @@ vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_khaje_v0/video_system_specs.json
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
+vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml:vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/lib/android.hardware.media.c2@1.0.so
 vendor/lib/libmediautils_vendor.so
 vendor/lib/libqc2audio_base.so
@@ -565,6 +553,7 @@ vendor/etc/perf/targetavcsysnodesconfigs.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/perf/targetsysnodesconfigs.xml
+vendor/etc/perf/thermalboost.conf
 vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml
 vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager@1.0-service.xml
@@ -702,6 +691,11 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices.so
+
+# QSAP
+vendor/bin/qsap_qapeservice
+vendor/etc/init/vendor.qsap.qapeservice.rc
+vendor/etc/seccomp_policy/qsap_qapeservice.policy
 
 # QTI
 vendor/lib64/libsoc_helper.so

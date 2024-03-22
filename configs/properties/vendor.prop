@@ -16,6 +16,7 @@ persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.audio.monitorRotation=false
 ro.config.media_vol_default=10
+ro.config.media_vol_steps=15
 ro.config.vc_call_vol_steps=11
 ro.vendor.audio.policy.engine.odm=true
 ro.vendor.audio.ring.filter=true
@@ -35,9 +36,43 @@ vendor.audio.adm.buffering.ms=2
 vendor.audio.c2.preferred=true
 vendor.audio.compress_capture.aac=true
 vendor.audio.compress_capture.enabled=true
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
+vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.gsl.shmem.dmaheap.uncached=true
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hal.output.suspend.supported=true
+vendor.audio.hw.aac.encoder=false
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.offload.multiaac.enable=true
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.offload.passthrough=false
+vendor.audio.offload.track.enable=true
+vendor.audio.parser.ip.buffer.size=262144
+vendor.audio.safx.pbe.enabled=false
+vendor.audio.tunnel.encode=false
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.in_period_size=144
+vendor.audio_hal.period_multiplier=3
+vendor.audio_hal.period_size=192
+vendor.voice.path.for.pcm.voip=true
+
+# Audio CPU
+vendor.audio.cpu.sched=31
+vendor.audio.cpu.sched.cpus=8
+vendor.audio.cpu.sched.cpuset.at=248
+vendor.audio.cpu.sched.cpuset.af=248
+vendor.audio.cpu.sched.cpuset.hb=248
+vendor.audio.cpu.sched.cpuset.hso=248
+vendor.audio.cpu.sched.cpuset.he=248
+vendor.audio.cpu.sched.onlyfast=false
+vendor.audio.rt.mode=23
+vendor.audio.rt.mode.onlyfast=false
+
+# Audio feature
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -80,28 +115,6 @@ vendor.audio.feature.usb_offload_burst_mode.enable=true
 vendor.audio.feature.usb_offload_sidetone_volume.enable=false
 vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
-vendor.audio.flac.sw.decoder.24bit=true
-vendor.audio.gsl.shmem.dmaheap.uncached=true
-vendor.audio.hal.boot.timeout.ms=20000
-vendor.audio.hal.output.suspend.supported=true
-vendor.audio.hw.aac.encoder=false
-vendor.audio.offload.buffer.size.kb=32
-vendor.audio.offload.gapless.enabled=true
-vendor.audio.offload.multiaac.enable=true
-vendor.audio.offload.multiple.enabled=false
-vendor.audio.offload.passthrough=false
-vendor.audio.offload.track.enable=true
-vendor.audio.parser.ip.buffer.size=262144
-vendor.audio.safx.pbe.enabled=false
-vendor.audio.tunnel.encode=false
-vendor.audio.use.sw.alac.decoder=true
-vendor.audio.use.sw.ape.decoder=true
-vendor.audio.use.sw.mpegh.decoder=true
-vendor.audio.volume.headset.gain.depcal=true
-vendor.audio_hal.in_period_size=144
-vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
-vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -150,6 +163,7 @@ vendor.qc2audio.suspend.enabled=true
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
+ro.crypto.metadata_init_delete_all_keys.enabled=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # DRM
@@ -220,13 +234,18 @@ ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1
 ro.vendor.audio.dolby.dax.version=DAX3_3.8.5.20_r1
 ro.vendor.audio.dolby.dax.support=true
 ro.vendor.audio.dolby.eq.half=true
-ro.vendor.audio.dolby.surround.enable=false 
+ro.vendor.audio.dolby.surround.enable=false
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 
 # FM
 vendor.hw.fm.init=0
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Gatekeeper
+vendor.gatekeeper.is_security_level_spu=0
 
 # Graphics
 graphics.gpu.profiler.support=true
@@ -255,7 +274,7 @@ vendor.pasr.activemode.enabled=true
 vendor.perf.framepacing.enable=1
 vendor.power.pasr.enabled=true
 
-# QCOM sys
+# QCOM
 persist.vendor.qcomsysd.enabled=1
 
 # Sensors
