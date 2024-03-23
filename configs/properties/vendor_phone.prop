@@ -4,6 +4,12 @@ persist.vendor.dpm.vndr.feature=1
 persist.vendor.dpm.vndr.halservice.enable=1
 persist.vendor.dpm.vndr.idletimer.mode=default
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.vendor.ims.no_stapa=1
+
 # NFC
 ro.vendor.se.type=HCE,UICC
 
