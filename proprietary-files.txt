@@ -318,9 +318,12 @@ vendor/lib64/liblbs_core.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_api_wds.so
+vendor/lib64/libloc_base_util.so
 vendor/lib64/libloc_core.so
 vendor/lib64/libloc_eng_hub.so
+vendor/lib64/libloc_mq_client.so
 vendor/lib64/libloc_qwes_iface.so
+vendor/lib64/libloc_ril_client.so
 vendor/lib64/libloc_util.so
 vendor/lib64/liblocation_api.so
 vendor/lib64/liblocation_api_msg.so
@@ -329,6 +332,7 @@ vendor/lib64/liblocation_integration_api.so
 vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/liblowi_client.so
+vendor/lib64/liblowi_common.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmapdata_api.so
