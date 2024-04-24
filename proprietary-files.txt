@@ -783,8 +783,10 @@ vendor/lib/libstreamparser.so
 vendor/lib64/libstreamparser.so
 
 # VPP
+vendor/lib/libmisight.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/libmisight.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
