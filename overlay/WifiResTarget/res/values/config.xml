@@ -44,9 +44,6 @@
     <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
     <bool name="config_wifiSoftapHeSuBeamformeeSupported" translatable="false">true</bool>
 
-    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool name="config_wifiSoftap6ghzSupported" translatable="false">true</bool>
-
     <!-- Indicates that bridged AP mode is supported on this device -->
     <bool name="config_wifiBridgedSoftApSupported" translatable="false">false</bool>
 
