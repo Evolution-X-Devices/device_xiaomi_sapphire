@@ -1,3 +1,6 @@
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # CNE
 persist.vendor.cne.feature=1
 
