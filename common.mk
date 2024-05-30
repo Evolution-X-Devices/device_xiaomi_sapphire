@@ -134,9 +134,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
-# Characteristics
-PRODUCT_CHARACTERISTICS := nosdcard
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
