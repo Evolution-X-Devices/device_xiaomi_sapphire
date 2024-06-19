@@ -14,6 +14,7 @@
 #include <fstream>
 #include <thread>
 
+#include "mi_disp.h"
 #include "UdfpsHandler.h"
 #include "xiaomi_touch.h"
 
