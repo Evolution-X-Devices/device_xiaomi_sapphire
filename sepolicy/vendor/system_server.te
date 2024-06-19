@@ -1,17 +1,5 @@
 # Displayfeature
 allow system_server vendor_hal_displayfeature_xiaomi_default:binder { call transfer };
 
-# last_kmsg
-allow system_server proc_last_kmsg:file r_file_perms;
-
 # OEM Fastcharge
-allow system_server sysfs_wakeup:file r_file_perms;
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
-
-# Touchfeature
-allow system_server hal_touchfeature_xiaomi_default:process signal;
-allow system_server sysfs_touch_hostprocess:file rw_file_perms;
-allow system_server touchfeature_device:chr_file rw_file_perms;
-allow system_server touchfeature_device:file { getattr map read };
-get_prop(system_server, vendor_touchfeature_prop)
-hal_client_domain(system_server, hal_touchfeature_xiaomi)
