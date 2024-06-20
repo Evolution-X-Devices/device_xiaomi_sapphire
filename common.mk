@@ -268,8 +268,10 @@ PRODUCT_COPY_FILES += \
 endif
 
 # IFAA
+ifeq ($(TARGET_HAS_UDFPS),true)
 PRODUCT_PACKAGES += \
     IFAAService
+endif
 
 # IPACM
 PRODUCT_PACKAGES += \
