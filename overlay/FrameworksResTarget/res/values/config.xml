@@ -59,9 +59,6 @@
         <item>"/vendor/lib64/libgsl.so"</item>
     </string-array>
 
-    <!-- True if camera app should be pinned via Pinner Service -->
-    <bool name="config_pinnerCameraApp">true</bool>
-
     <!-- True if home app should be pinned via Pinner Service -->
     <bool name="config_pinnerHomeApp">true</bool>
 
@@ -72,7 +69,7 @@
          full. Set a time margin to make the device fully charged before the target time arrives.
          The unit is minutes and the default value is 30 minutes. If you find that it is not enough
          to make the device to be fully charged at the target time, increase the value -->
-    <integer name="config_chargingControlTimeMargin">140</integer>
+    <integer name="config_chargingControlTimeMargin">90</integer>
 
     <!-- For a device that cannot bypass battery when charging stops (that is, the battery current
          is 0mA when charging stops), the battery will gradually discharge. So we need to make it
