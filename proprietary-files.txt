@@ -1,4 +1,4 @@
-# All blobs below are extracted from sapphire V816.0.2.0.UNGMIXM
+# All blobs below are extracted from sapphire V816.0.4.0.UNGMIXM
 
 # Alarm
 system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
