@@ -311,10 +311,6 @@ echo 691200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
 
-# configure input boost settings
-echo 1190000 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
-echo 80 > /proc/sys/walt/input_boost/input_boost_ms
-
 # configure governor settings for gold cluster
 if [ -d "/sys/devices/system/cpu/cpufreq/policy4/" ]; then
 echo "walt" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
