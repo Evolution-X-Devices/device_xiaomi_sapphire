@@ -166,6 +166,7 @@ vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib64/hw/gralloc.bengal.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisplaydebug.so
@@ -213,6 +214,7 @@ vendor/etc/dolby/dax-default.xml|b037c718ada2475604c177ebe01974db9e65c43c
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libdapparamstorage.so
 vendor/lib/libdlbpreg.so
 vendor/lib/soundfx/libdlbvol.so|13f8f29cfa6c21e2c407cf3b4bfbd9e32503db1f
@@ -220,6 +222,7 @@ vendor/lib/soundfx/libhwdap.so|5de6220af8bb5686f1e6d5b14e651b1a3b128ab2
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libswvqe.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_store_dolby.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdeccfg.so
@@ -361,6 +364,7 @@ vendor/lib/libadreno_app_profiles.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libgsl.so
 vendor/lib/libkcl.so
+vendor/lib/libdisplayconfig.qti.so
 vendor/lib/libkernelmanager.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
@@ -696,6 +700,8 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices.so
+vendor/lib64/libqti_vndfwk_detect_vendor.so
+vendor/lib64/libvndfwk_detect_jni.qti_vendor.so
 
 # QSAP
 vendor/bin/qsap_qapeservice
