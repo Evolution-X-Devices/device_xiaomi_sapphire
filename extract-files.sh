@@ -69,9 +69,6 @@ function blob_fixup() {
         vendor/lib64/hw/displayfeature.default.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;    
-        vendor/etc/dolby/dax-default.xml)
-            sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
-            ;;
     esac
 }
 

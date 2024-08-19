@@ -210,15 +210,15 @@ vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 # Dolby
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service
-vendor/etc/dolby/dax-default.xml|b037c718ada2475604c177ebe01974db9e65c43c
+vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
 vendor/lib/libcodec2_hidl_plugin.so
 vendor/lib/libdapparamstorage.so
 vendor/lib/libdlbpreg.so
-vendor/lib/soundfx/libdlbvol.so|13f8f29cfa6c21e2c407cf3b4bfbd9e32503db1f
-vendor/lib/soundfx/libhwdap.so|5de6220af8bb5686f1e6d5b14e651b1a3b128ab2
+vendor/lib/soundfx/libdlbvol.so
+vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libswvqe.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
@@ -226,14 +226,14 @@ vendor/lib64/libcodec2_hidl_plugin.so
 vendor/lib64/libcodec2_store_dolby.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so|22e7590fcd8fb546f831315bb1571624eb5acd98
+vendor/lib64/libdlbdsservice.so
 vendor/lib64/libdlbpreg.so
-vendor/lib64/soundfx/libdlbvol.so|4f9e52ad0ce7b0950b0118ab9ededd168006f8ea
-vendor/lib64/soundfx/libhwdap.so|6220c4b3a3c7eab45957fa12388e4ea66b495428
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
-vendor/lib64/libcodec2_soft_ac4dec.so|2fd8fb415bf0a8c7af28116c44e1787201b5b989
-vendor/lib64/libcodec2_soft_ddpdec.so|c121d22973fbfedc508d0f94e3c82c70ea2ab491
+vendor/lib64/libcodec2_soft_ac4dec.so
+vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
