@@ -47,6 +47,14 @@ ro.nfc.port=I2C
 # NTP
 persist.backup.ntpServer="0.pool.ntp.org"
 
+# Radio
+DEVICE_PROVISIONED=1
+persist.vendor.radio.atfwd.start=true
+ril.subscription.types=NV,RUIM
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ro.telephony.default_network=33,33
+telephony.lteOnCdmaDevice=1
+
 # SdCardFS
 persist.sys.fuse.passthrough.enable=true
 
@@ -64,3 +72,4 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 ro.hardware.wlan.dbs=0
 ro.hardware.wlan.mimo=0
 ro.hardware.wlan.vendor=qcom
+ro.hardware.wlan.chip=wcn3988

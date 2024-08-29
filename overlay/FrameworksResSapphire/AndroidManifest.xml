@@ -3,10 +3,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.overlay.phone.common">
+    package="android.overlay.xiaomi_sapphire">
 
     <overlay
         android:isStatic="true"
-        android:priority="100"
+        android:priority="700"
         android:targetPackage="android" />
 </manifest>

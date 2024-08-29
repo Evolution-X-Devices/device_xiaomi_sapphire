@@ -9,3 +9,8 @@ ro.af.client_heap_size_kbyte=7168
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
+
+# Radio
+persist.vendor.radio.enable_temp_dds=true
+ro.vendor.radio.fastdormancy=true
+ro.vendor.radio.features_common=3

@@ -1,6 +1,9 @@
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# DPM
+persist.vendor.dpm.feature=11
+
 # GPS
 persist.sys.gps.fence=true
 
@@ -10,3 +13,7 @@ ro.surface_flinger.supports_background_blur=0
 
 # Media
 vendor.media.target_variant=_khaje_v0
+
+# Radio
+ro.telephony.sim_slots.count=1
+telephony.active_modems.max_count=2

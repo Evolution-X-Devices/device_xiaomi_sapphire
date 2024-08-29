@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResPhone",
-    product_specific: true,
+    name: "WifiResSapphire",
+    device_specific: true
 }
