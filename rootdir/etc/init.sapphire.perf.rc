@@ -31,10 +31,12 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us 5000
 
     # Configure uclamp
+    write /dev/cpuctl/top-app/cpu.uclamp.min 1.00
+    write /dev/cpuctl/foreground/cpu.uclamp.min 0.00
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
-    write /dev/cpuctl/background/cpu.uclamp.max 50
-    write /dev/cpuctl/system-background/cpu.uclamp.max 50
-    write /dev/cpuctl/dex2oat/cpu.uclamp.max 60
+    write /dev/cpuctl/background/cpu.uclamp.max 512
+    write /dev/cpuctl/system-background/cpu.uclamp.max 512
+    write /dev/cpuctl/dex2oat/cpu.uclamp.max 615
     # Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 5% dex2oat ~2.5%)
     write /dev/cpuctl/background/cpu.shares 1024
     write /dev/cpuctl/system-background/cpu.shares 1024
@@ -58,6 +60,16 @@ on property:vendor.post_boot.parsed=1
     # IRQ 209: kgsl_3d0_irq
     write /proc/irq/209/smp_affinity_list 1
     write /proc/irq/218/smp_affinity_list 2
+
+on init
+    # Boot time uclamp tuning
+    write /dev/cpuctl/top-app/cpu.uclamp.min 15.90
+    write /dev/cpuctl/foreground/cpu.uclamp.min 15.90
+    write /dev/cpuctl/system/cpu.uclamp.min 15.90
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp_min 51.20
+
+    # RT uclamp setting
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
 # ZRAM
 on property:sys.boot_completed=1
