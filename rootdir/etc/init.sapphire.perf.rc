@@ -56,10 +56,10 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/vm/kswapd_threads 1
 
     # IRQ Tuning
-    # IRQ 218: msm_drm0
-    # IRQ 209: kgsl_3d0_irq
-    write /proc/irq/209/smp_affinity_list 1
-    write /proc/irq/218/smp_affinity_list 2
+    # IRQ 218: msm_drm0 -> CPU 7
+    # IRQ 209: kgsl_3d0_irq -> CPU 6
+    write /proc/irq/209/smp_affinity_list 7
+    write /proc/irq/218/smp_affinity_list 6
 
 on init
     # Boot time uclamp tuning
