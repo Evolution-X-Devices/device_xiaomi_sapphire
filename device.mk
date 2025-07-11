@@ -29,7 +29,6 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_sapphire)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureResSapphire \
     FrameworksResSapphire \
     SettingsProviderResSapphire \
     SettingsResSapphire \
