@@ -22,7 +22,6 @@ vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/audioadsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/lib64/libadsp_default_listener.so
@@ -64,8 +63,6 @@ vendor/lib64/libar-gpr.so
 -vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libbatterylistener.so
-vendor/lib64/libhfp_pal.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
