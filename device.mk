@@ -24,6 +24,9 @@ TARGET_HAS_UDFPS := true
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_sapphire)
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureResSapphire \
