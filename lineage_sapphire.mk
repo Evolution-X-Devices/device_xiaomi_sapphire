@@ -14,6 +14,11 @@ $(call inherit-product, device/xiaomi/sapphire/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Include our private certificate
+-include vendor/lineage-priv/keys/keys.mk
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
 PRODUCT_NAME := lineage_sapphire
 PRODUCT_DEVICE := sapphire
 PRODUCT_MANUFACTURER := Xiaomi
@@ -21,3 +26,5 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 13
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+BUILD_FINGERPRINT := Redmi/sapphiren_global/sapphiren:13/TKQ1.221114.001/OS2.0.11.0.VNGMIXM:user/release-keys
