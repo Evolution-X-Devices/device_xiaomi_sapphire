@@ -21,6 +21,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Fingerprint
 TARGET_HAS_UDFPS := true
 
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureResSapphire \
