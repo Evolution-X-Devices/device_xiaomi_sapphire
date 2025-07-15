@@ -1,5 +1,9 @@
 # Display
 debug.sf.frame_rate_multiple_threshold=60
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=540|2109|105
+
 # WLAN
 ro.hardware.wlan.chip=wcn3988

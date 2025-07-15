@@ -22,7 +22,8 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_HAS_UDFPS := true
 
 PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_sapphire)
