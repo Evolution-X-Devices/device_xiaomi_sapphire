@@ -12,10 +12,11 @@ from extract_utils.main import (
 module = ExtractUtilsModule(
     'sapphire',
     'xiaomi',
+    check_elf=False,
 )
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm6255-common', module.vendor
+        module, 'sm6225-common', module.vendor
     )
     utils.run()
