@@ -653,7 +653,6 @@ odm/lib64/hw/fingerprint.fpc_fod.default.so:vendor/lib64/hw/fingerprint.fpc_fod.
 odm/lib64/hw/fingerprint.goodix_fod.default.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
 odm/lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
 vendor/lib64/libmifpext.so
-vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # Firmware touch
 odm/firmware/Conf_MultipleTest_ft3519t.ini:vendor/firmware/Conf_MultipleTest_ft3519t.ini

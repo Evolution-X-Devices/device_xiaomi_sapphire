@@ -23,6 +23,7 @@ TARGET_HAS_UDFPS := true
 
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
+    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor:64 \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
 # Init
