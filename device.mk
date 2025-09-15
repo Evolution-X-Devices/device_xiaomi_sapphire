@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     FrameworksResSapphire \
     SettingsProviderResSapphire \
     SettingsResSapphire \
+    SystemUIResSapphire \
     WifiResSapphire
 
 # Sensors
