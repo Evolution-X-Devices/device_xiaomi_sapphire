@@ -719,10 +719,21 @@ vendor/etc/media_codecs_performance_khaje_iot.xml
 vendor/etc/media_profiles_khaje_iot.xml
 
 # NFC
+odm/etc/permissions/sku_n7n/android.hardware.nfc.hce.xml
+odm/etc/permissions/sku_n7n/android.hardware.nfc.hcef.xml
+odm/etc/permissions/sku_n7n/android.hardware.nfc.uicc.xml
+odm/etc/permissions/sku_n7n/android.hardware.nfc.xml
+odm/etc/permissions/sku_n7n/android.hardware.se.omapi.uicc.xml
+odm/etc/permissions/sku_n7n_ss/android.hardware.nfc.hce.xml
+odm/etc/permissions/sku_n7n_ss/android.hardware.nfc.hcef.xml
+odm/etc/permissions/sku_n7n_ss/android.hardware.nfc.uicc.xml
+odm/etc/permissions/sku_n7n_ss/android.hardware.nfc.xml
+odm/etc/permissions/sku_n7n_ss/android.hardware.se.omapi.uicc.xml
 vendor/bin/STFlashTool
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/st21nfc_conf.txt
+vendor/lib64/libstfactory-vendor.so
 vendor/lib/nfc_nci.st21nfc.st.so
 vendor/lib64/nfc_nci.st21nfc.st.so
 
