@@ -6,4 +6,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple">Redmi Note 13</string>
+    <fraction name="def_window_animation_scale">60%</fraction>
+    <fraction name="def_window_transition_scale">60%</fraction>
 </resources>
