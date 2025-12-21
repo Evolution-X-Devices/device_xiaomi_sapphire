@@ -384,6 +384,13 @@
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportScreenOffUdfps">true</bool>
 
+    <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+
+    <!-- Default value for fp screen off unlock toggle, it only works for the devices that support
+         fp screen off unlock-->
+    <bool name="config_screen_off_udfps_default_on">false</bool>
+
    <!-- Flag indicating whether the surface flinger is inefficient
         at performing a blur.  Used by parts of the UI to turn off
         the blur effect where it isn't worth the performance hit.
