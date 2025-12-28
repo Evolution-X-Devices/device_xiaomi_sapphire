@@ -27,4 +27,4 @@ PRODUCT_MODEL := Redmi Note 13
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-BUILD_FINGERPRINT := Redmi/sapphiren_global/sapphiren:13/TKQ1.221114.001/OS2.0.203.0.VNGMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/sapphiren_global/sapphire:13/TKQ1.221114.001/OS2.0.207.0.VNGMIXM:user/release-keys
