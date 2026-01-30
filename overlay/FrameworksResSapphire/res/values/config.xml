@@ -396,5 +396,36 @@
         the blur effect where it isn't worth the performance hit.
         As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">false</bool>
+    
+    <!--This PR addresses two issues for Aperture Camera on Android 16:
+    
+    1. Enable Auxiliary Cameras: Added 'org.lineageos.aperture' to 'config_camera_aux_package_allowlist' to allow access to Ultra-wide and Macro sensors. Hardware IDs (0, 2, 3) are confirmed to be working.
+    
+    2. Fix Thermal Warning: Adjusted 'config_thermalFilePath' and thresholds to prevent the 'Thermal Throttle' UI warning which is incorrectly triggered on Android 16 builds.-->
+    
+    <bool name="config_camera_aux_allow_all" translatable="false">true</bool>
+    
+    <string-array name="config_camera_aux_package_allowlist" translatable="false">
+      <item>org.lineageos.aperture</item>
+      </string-array>
+      
+    <!--but, if you want active with enable lend id delete script above then activate the bottom one
+    
+    <string-array name="config_camera_aux_package_allowlist" translatable="false">
+    <item>org.lineageos.aperture</item></string-array>
+    
+    <string-array name="config_camera_aux_ids" translatable="false">
+    <item>0</item>
+    <item>2</item>
+    <item>3</item>
+    </string-array>
+    
+    • ID 0: Main 108MP (1.0x)
+    • ID 2: Ultra-wide 8MP (0.7x)
+    • ID 3: Macro 2MP (1.1x)
+    -->
+    
+    <string name="config_thermalFilePath" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
+    <integer name="config_thermalThreshold">45000</integer>
 
 </resources>
