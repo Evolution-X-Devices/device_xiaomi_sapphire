@@ -46,3 +46,6 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
+# Fix: Create directory KERNEL_OBJ/usr for some modules
+$(shell mkdir -p $(OUT_DIR)/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/usr)
