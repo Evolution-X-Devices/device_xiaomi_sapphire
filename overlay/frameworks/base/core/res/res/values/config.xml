@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2026 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Name of a font family to use as light font. For theming purpose. -->
+    <string name="config_lightFontFamily" translatable="false">sans-serif-light</string>
+
+    <!-- Name of a font family to use as regular font. For theming purpose. -->
+    <string name="config_regularFontFamily" translatable="false">sans-serif-regular</string>
+
+    <!-- Carregamento: Xiaomi usa o protocolo proprietário que o crDroid identifica melhor como TurboPower -->
+    <bool name="config_hasDashCharger">false</bool>
+    <bool name="config_hasWarpCharger">false</bool>
+    <bool name="config_hasVoocCharger">false</bool>
+    <bool name="config_hasTurboPowerCharger">true</bool>
+
+    <!-- Caminho para detectar o carregamento rápido no Kernel do Sapphire -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/fast_charger</string>
+    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+
+    <!-- Bloqueio de sensores para economizar bateria em apps específicos -->
+    <string-array name="config_blockPackagesSensorDrain">
+        <item>com.whatsapp</item>
+        <item>com.gbwhatsapp</item>
+        <item>org.telegram.messenger</item>
+        <item>com.snapchat.android</item>
+        <item>com.facebook.orca</item>
+        <item>com.android.chrome</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.instagram.android</item>
+        <item>com.spotify.music</item>
+    </string-array>
+
+    <!-- Pocket Lock: O Sapphire usa sensor de proximidade virtual, 
+         então usar o sensor de luz é mais seguro para evitar toques acidentais -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">true</bool>
+
+    <!-- Configuração de Digital sob a tela (UDFPS) -->
+    <bool name="config_supportsUdfps">true</bool>
+    <bool name="config_fpCancelIfNotIdle">true</bool>
+
+    <!-- Doze (Always on Display) - Sapphire tem tela AMOLED -->
+    <bool name="config_dozePulseTilt">true</bool>
+    <bool name="config_dozePulseProximity">true</bool>
+    <bool name="config_deviceHaveWakeUpProximity">true</bool>
+
+    <!-- Habilitar Smart Pixels para economizar bateria em telas AMOLED -->
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Suporte a carregamento inteligente (Smart Charging) -->
+    <bool name="config_smartChargingSupported">true</bool>
+
+</resources>
