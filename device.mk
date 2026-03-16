@@ -30,6 +30,8 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_sapphire)
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 PRODUCT_PACKAGES += \
     FrameworksResSapphire \
     SettingsProviderResSapphire \

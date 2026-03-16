@@ -17,6 +17,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
 
+# Gapps
+-include vendor/gapps/arm64/arm64-vendor.mk
+
+# Gms
+WITH_GMS := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_NAME := lineage_sapphire
