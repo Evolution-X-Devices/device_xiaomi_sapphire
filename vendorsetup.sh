@@ -6,6 +6,8 @@ end="\033[0m"
 echo -e "${color}Applying patches${end}"
 sleep 1
 
+git clone https://github.com/Liekoo/packages_apps_FastCharge.git packages/apps/FastCharge
+
 rm -rf device/xiaomi/sepolicy
 git clone -b 16 git@github.com:lycodump/device_xiaomi_sepolicy.git device/xiaomi/sepolicy
 
