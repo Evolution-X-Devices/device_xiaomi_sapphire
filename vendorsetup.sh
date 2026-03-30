@@ -49,6 +49,8 @@ git clone -b 16-qpr2 git@github.com:lycodump/hardware_qcom-caf_sm6225_audio_prim
 rm -rf device/qcom/sepolicy_vndr/sm6225
 git clone -b 16-qpr2 git@github.com:lycodump/android_device_qcom_sepolicy_vndr_sm6225.git device/qcom/sepolicy_vndr/sm6225
 
+rm -rf hardware/qcom-caf/sdm660 hardware/qcom-caf/sdm845 hardware/qcom-caf/sm8150 hardware/qcom-caf/sm8250 hardware/qcom-caf/sm8350 hardware/qcom-caf/sm8450 hardware/qcom-caf/sm8550 hardware/qcom-caf/sm8650 hardware/qcom-caf/sm8750
+
 echo "============================"
 echo "Clone success"
 echo "============================"
