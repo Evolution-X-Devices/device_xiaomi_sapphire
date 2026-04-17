@@ -1,0 +1,26 @@
+[
+  {
+    "device": "sapphire",
+    "maintainer": "Lyco (Liekoo)",
+    "github": "Liekoo",
+    "status": "active",
+    "firmware": {
+      "required": true,
+      "url": "https://xmfirmwareupdater.com/archive/firmware/sapphire/"
+    },
+    "ci": {
+      "enabled": true,
+      "schedule": "monthly",
+      "build_target": "userdebug",
+      "build_type": "both"
+    },
+    "installation_images": {
+      "bka": ["recovery"],
+      "bka-vanilla": ["recovery"],
+      "vic": ["recovery"],
+      "vic-vanilla": ["recovery"],
+      "udc": ["recovery"],
+      "udc-vanilla": ["recovery"]
+    }
+  }
+]
