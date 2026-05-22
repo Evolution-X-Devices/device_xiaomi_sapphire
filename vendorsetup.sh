@@ -12,10 +12,10 @@ rm -rf device/xiaomi/sepolicy
 git clone -b 16 https://github.com/lycodump/device_xiaomi_sepolicy.git device/xiaomi/sepolicy
 
 rm -rf hardware/dolby
-git clone https://github.com/Evolution-X-Devices/hardware_dolby.git hardware/dolby
+git clone -b 16 https://github.com/Pong-Development/hardware_dolby.git hardware/dolby
 
 rm -rf hardware/xiaomi
-git clone -b bka-no-dolby https://github.com/Evolution-X-Devices/hardware_xiaomi.git hardware/xiaomi
+git clone -b bka-no-dolby https://github.com/lycodump/hardware_xiaomi.git hardware/xiaomi
 rm -rf hardware/xiaomi/FastCharge
 
 echo "============================"
