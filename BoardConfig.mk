@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # Fix: Create directory KERNEL_OBJ/usr for some modules
